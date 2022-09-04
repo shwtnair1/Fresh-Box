@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect } from 'react';
 import styles from './RecipeList.module.css';
 import Flex from '../../components/Flex';
 import Box from '../../components/Box';
@@ -49,10 +49,10 @@ function RecipeList() {
   const maxRecipesSelected = recipeSelectCount === data.max;
 
   // price summary and total price
-  const summary = useMemo(
-    () =>
-      calculatePriceSummary(recipes, data.baseRecipePrice, data.shippingPrice),
-    [recipes, data.baseRecipePrice, data.shippingPrice]
+  const summary = calculatePriceSummary(
+    recipes,
+    data.baseRecipePrice,
+    data.shippingPrice
   );
 
   const totalPrice = parseRawPrice(
