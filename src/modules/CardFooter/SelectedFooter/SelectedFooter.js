@@ -17,6 +17,7 @@ function SelectedFooter({
     <Flex className={styles.container}>
       <Box className={styles.minusIcon}>
         <Button
+          data-testid="selection-remove-button"
           id={styles.customButton}
           onClick={() => handleRemoveRecipe(recipeId)}
         >
@@ -28,9 +29,10 @@ function SelectedFooter({
       </Box>
       <Box className={styles.plusIcon}>
         <Button
+          data-testid="selection-add-button"
           id={styles.customButton}
           onClick={() => handleAddRecipe(recipeId)}
-          disabled={maxRecipesSelected || selectionLimit}
+          disabled={maxRecipesSelected || !!selectionLimit}
         >
           <FaPlus />
         </Button>

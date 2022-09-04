@@ -30,6 +30,7 @@ function RecipeCard({
       <Flex className={styles.footer}>
         {selected > 0 ? (
           <SelectedFooter
+            data-testid="selected-footer"
             recipeId={id}
             handleAddRecipe={handleAddRecipe}
             handleRemoveRecipe={handleRemoveRecipe}
@@ -39,6 +40,7 @@ function RecipeCard({
           />
         ) : (
           <UnselectedFooter
+            data-testid="unselected-footer"
             recipeId={id}
             handleAddRecipe={handleAddRecipe}
             minRecipesSelected={minRecipesSelected}

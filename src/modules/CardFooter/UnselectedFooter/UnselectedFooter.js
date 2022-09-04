@@ -11,6 +11,7 @@ function UnselectedFooter({
   return (
     <Flex className={styles.unselectedFooter}>
       <Button
+        data-testid="add-button"
         className={styles.button}
         onClick={() => handleAddRecipe(recipeId)}
         disabled={maxRecipesSelected}
