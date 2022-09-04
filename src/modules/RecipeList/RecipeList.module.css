@@ -1,0 +1,14 @@
+.recipeList{
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.recipeListContainer{
+    max-width:1144px;
+    margin-right:auto; 
+    margin-left:auto; 
+    margin-top: 20px;
+}
+.cardContainer{
+    margin:20px 0px;
+    width: 341px;
+}

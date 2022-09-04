@@ -1,0 +1,37 @@
+.recipeCard{
+    flex-direction: column;
+    box-shadow: 0 3px 8px 0 rgb(0 0 0 / 15%);
+    border-radius:4px;
+}
+
+.recipeCardSelected{
+    flex-direction: column;
+    border: 1px solid #067A46;
+    box-shadow: 0 3px 8px 0 rgb(0 0 0 / 15%);
+    border-radius:4px;
+}
+
+.image{
+    border-radius: 2px 2px 0px 0px;
+    overflow: hidden;
+}
+
+.recipeText{
+    text-align:left;
+    padding:8px;
+    height:120px;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.description{
+    font-size: 14px;
+}
+
+.footer{
+    height:56px;
+}
+

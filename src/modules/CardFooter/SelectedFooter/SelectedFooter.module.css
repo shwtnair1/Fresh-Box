@@ -1,0 +1,33 @@
+.container{
+    justify-content: space-evenly;
+    align-items: center;
+    width:100%;
+    background-color: #067A46;
+}
+
+.minusIcon{
+    color:white;
+    cursor: pointer;
+}
+
+.plusIcon{
+    color:white;
+    cursor: pointer;
+}
+
+.textContainer{
+    color:white;
+    font-weight: bold;
+}
+
+#customButton{
+    background-color:#067A46;
+    border:none;
+    color:white;
+    cursor: pointer;
+}
+
+#customButton:disabled{
+    cursor: default;
+    opacity: 0.5;
+}

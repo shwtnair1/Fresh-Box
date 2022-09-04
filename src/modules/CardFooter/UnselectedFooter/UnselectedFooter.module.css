@@ -1,0 +1,10 @@
+.unselectedFooter{
+    width:100%;
+    justify-content: flex-end;
+    margin:8px;
+}
+
+.button{
+    background-color: white;
+    width:50%;
+}
